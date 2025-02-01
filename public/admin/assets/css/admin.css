@@ -1928,7 +1928,8 @@ body:not(.layout-fixed) .main-sidebar .sidebar {
 }
 
 [class*="sidebar-dark-"] {
-  background-color: #29292d;
+  background-color: #737676;
+  /* background-color: #29292d; */
 }
 
 [class*="sidebar-dark-"] .user-panel a:hover {
@@ -2286,7 +2287,8 @@ body:not(.layout-fixed) .main-sidebar .sidebar {
 
 .sidebar-dark-gray .nav-sidebar > .nav-item > .nav-link.active,
 .sidebar-light-gray .nav-sidebar > .nav-item > .nav-link.active {
-  background-color: #e91e63;
+  background-color: #7a2b46;
+  /* background-color: #e91e63; */
   color: #fff;
 }
 

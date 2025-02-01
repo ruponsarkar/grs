@@ -807,7 +807,7 @@ class adminPanelController extends Controller
             $logo = home_asset::find($id)->update([
                 'logo' => $photo
             ]);
-            $request->logo->move(base_path('public_html/assets/homeAssets'), $photo);
+            $request->logo->move(base_path('public/assets/homeAssets'), $photo);
             return redirect()->back()->with('message', 'Updated');
         }
         if ($request->banner) {
@@ -817,7 +817,7 @@ class adminPanelController extends Controller
             $banner = home_asset::find($id)->update([
                 'banner' => $photo
             ]);
-            $request->banner->move(base_path('public_html/assets/homeAssets'), $photo);
+            $request->banner->move(base_path('public/assets/homeAssets'), $photo);
             return redirect()->back()->with('message', 'Updated');
         }
     }

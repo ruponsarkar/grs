@@ -11,7 +11,7 @@
 
 
     <meta property="og:type" content="" />
-    <meta property="og:title" content="" />
+    <meta property="og:title" content="GRS Publisher" />
     <meta property="og:description" content="" />
     <meta property="og:image" content="" />
 
@@ -125,16 +125,19 @@
             </div>
             <div class="col-md-8 d-flex align-items-center justify-content-center">
                 <div class="h-border text-center">
-                    {{-- <img src="assets/img/name.png" alt="" class="h-img"> --}}
+                       
+            
+
+
                     <h3 class="h-name px-2">
-                        International Research and Academic scholar society
+                        Global Research Society Publisher
                     </h3>
                     {{-- <h3 class="h-name px-2">
-                    IRASS Publisher
+                    GRS Publisher
                     </h3> --}}
 
                     {{-- <div class="h-sub-name">
-                        International Journal of IRASS Publisher
+                        International Journal of GRS Publisher
                     </div> --}}
                 </div>
             </div>
@@ -150,6 +153,7 @@
 
 
         <div class="row m-0">
+           
             <header id="header" class="header">
                 <nav id="navbar" class="navbar order-last order-lg-0 bg-nav-dark">
                     <ul>
@@ -200,6 +204,8 @@
         </div>
         <!-- navbar -->
         {{-- <div class="container-fluid"> --}}
+            {{-- <img src="{{ url('assets/homeAssets/' . $logo) }}" alt="" class=" logo" /> --}}
+            
         @yield('content')
         {{-- </div> --}}
 
@@ -230,7 +236,7 @@
                         <div class="footer-info">
                             <h3>About Us </h3>
                             <p>
-                            IRASS Publisher aims to be a leading platform for innovative and impactful publishing, dedicated to enhancing the dissemination of high-quality academic, professional, and creative content. Our goal is to bridge the gap between authors and 
+                            GRS Publisher aims to be a leading platform for innovative and impactful publishing, dedicated to enhancing the dissemination of high-quality academic, professional, and creative content. Our goal is to bridge the gap between authors and 
                                 ...<a href="{{ url('about') }}"> Read more</a>
                             </p>
                         </div>
@@ -296,13 +302,13 @@
                             Dighaljhar, Hojai, Assam 782439(India)
                             <br>
                             <i class="bi bi-envelope"></i>
-                            <strong>Email:</strong> contact@irasspublisher.com<br><br>
+                            <strong>Email:</strong> contact@GRSpublisher.com<br><br>
 
 
-                            <strong>Principal Contact :</strong> Director, IRASS
+                            <strong>Principal Contact :</strong> Director, GRS
                             <br><br>
                             <i class="bi bi-envelope"></i>
-                            <strong>Email:</strong> director@IRASSpublishers.com<br><br>
+                            <strong>Email:</strong> director@GRSpublishers.com<br><br>
 
                     </div>
 
@@ -312,7 +318,7 @@
 
         <div class="container p-4">
             <div class="copyright">
-                &copy; Copyright <strong><span>IRASS Publishers</span></strong>. All Rights Reserved
+                &copy; Copyright <strong><span>GRS Publishers</span></strong>. All Rights Reserved
             </div>
             {{-- <div class="credits">
                 Developed by <a href="https://pageuptechnologies.com"><b> PageUpTechnologies </b></a>

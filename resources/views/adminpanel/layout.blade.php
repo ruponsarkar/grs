@@ -68,7 +68,7 @@
             <img src="{{url('admin/assets/img/avatar5.png')}}" class="img-circle elevation-2" alt="User Image">
           </div>
           <div class="info">
-            <a href="{{URL('admin_index')}}" class="d-block text-decoration-none">IRASS</a>
+            <a href="{{URL('admin_index')}}" class="d-block text-decoration-none">GRS</a>
           </div>
         </div>
 

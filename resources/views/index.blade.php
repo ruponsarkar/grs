@@ -22,47 +22,6 @@
     <div class="">
 
         <div class="row pt-2">
-            <div class="col-xl-5">
-                <div class="card-c">
-                    <div class="h-box">
-                        <div class="h-box-text p-2">
-                           Mission and Vision
-                        </div>
-                    </div>
-
-                    <div class="row py-2">
-                        <div class="col-12 text-center p-3">
-                            <h5>Our Mission</h5>
-                        <div class="px-2" style="text-align: justify">
-                            At IRASS Publisher, our mission is to empower authors and researchers by providing a platform for their unique perspectives. We believe in fostering creativity and promoting voices that reflect the richness of human experience.
-                        </div>
-                        </div>
-                    </div>
-                    <div class="row py-2">
-                        <div class="col-12 text-center p-3">
-                            <h5> Our Vision</h5>
-                        <div class="px-2" style="text-align: justify">
-                            We envision a world where diverse stories and groundbreaking research thrive, enriching the literary and academic landscape. We aim to be a leading publisher recognized for our commitment to quality, innovation, and inclusivity.
-                        </div>
-                        </div>
-                    </div>
-
-
-                    <div class="row py-2">
-                        <div class="col-12 text-center p-3">
-                            <h5>Open Access Policy</h5>
-                            <div class="px-2" style="text-align: justify">
-                            IRASS Publisher commits to providing open access to all its published content. Our policy
-                            ensures that research articles are freely accessible to the public without subscription
-                            fees. Authors retain copyright while allowing unrestricted distribution and reproduction in
-                            any medium, provided the original work is properly cited. By removing access barriers, IRASS
-                            aims to foster a more inclusive and collaborative scientific community.
-                            </div>
-                        </div>
-                    </div>
-                    <!-- </section> -->
-                </div>
-            </div>
 
             <div class="col-xl-7">
                 <section id="hero">
@@ -72,11 +31,11 @@
                             <div class="carousel-inner" role="listbox">
 
                                 <!-- Slide 1 -->
-                                <div class="carousel-item active" style="background-image: url(assets/img/slide/3.jpg)">
+                                <div class="carousel-item active" style="background-image: url(assets/img/slide/6.jpg)">
                                     <div class="carousel-container">
                                         <div class="carousel-content">
                                             <h2 class="animate__animated animate__fadeInDown">Welcome to
-                                                <span>IRASS Publishers</span>
+                                                <span>GRS Publishers</span>
                                             </h2>
                                             <p class="animate__animated animate__fadeInUp">Writing is a solitary
                                                 endeavor,
@@ -90,10 +49,10 @@
                                 </div>
 
                                 <!-- Slide 2 -->
-                                <div class="carousel-item" style="background-image: url(assets/img/slide/1.jpg)">
+                                <div class="carousel-item" style="background-image: url(assets/img/slide/2.jpg)">
                                     <div class="carousel-container">
                                         <div class="carousel-content">
-                                            <h2 class="animate__animated fanimate__adeInDown">IRASS
+                                            <h2 class="animate__animated fanimate__adeInDown">GRS
                                                 <span>Publishers</span>
                                             </h2>
                                             <p class="animate__animated animate__fadeInUp">Silence is the death of a
@@ -107,10 +66,10 @@
                                 </div>
 
                                 <!-- Slide 3 -->
-                                <div class="carousel-item" style="background-image: url(assets/img/slide/4.jpg)">
+                                <div class="carousel-item" style="background-image: url(assets/img/slide/5.jpg)">
                                     <div class="carousel-container">
                                         <div class="carousel-content">
-                                            <h2 class="animate__animated animate__fadeInDown">IRASS <span>Publishers
+                                            <h2 class="animate__animated animate__fadeInDown">GRS <span>Publishers
                                                 </span></h2>
                                             <p class="animate__animated animate__fadeInUp">lets you feed your inner
                                                 control
@@ -137,40 +96,244 @@
                     </div>
                 </section>
 
+
+
                 <div class="col-12 pt-3">
                     <div class="card-c">
-                        <section id="indexing" class="indexing">
-                            <div class="h-box">
-                                <div class="h-box-text p-2">
-                                    Indexing
-                                </div>
-                            </div>
-                            <div class="container" >
-                                <div class="indexing-slider swiper">
-                                    <div class="swiper-wrapper align-items-center">
 
-                                        @foreach ($indexings as $data)
-                                            <div class="swiper-slide">
-                                                <img class="img-fluid"
-                                                    src="{{ url('assets/indexing/img/' . $data->img) }}"
-                                                    alt="Image"
-                                                    style="height: 140px; width: 140px; object-fit: contain;">
-                                            </div>
-                                        @endforeach
+
+
+                        <div class="h-box">
+                            <div class="h-box-text p-2">
+                                GRS Publisher Open Access Policy
+                            </div>
+                        </div>
+
+                        <section id="indexing" class="indexing">
+                            <div class="row py-2">
+                                <div class="col-12 text-center p-3">
+
+                                    <div class="px-2" style="text-align: justify">
+                                        <div>
+                                            <strong>
+                                                Introduction
+                                            </strong>
+                                        </div>
+                                        GRS Publisher is committed to advancing knowledge and fostering collaboration
+                                        through open access publishing. Our open access policy ensures that research is
+                                        freely accessible to all, promoting wider dissemination and engagement with
+                                        scholarly work.
+
                                     </div>
                                 </div>
+
+                                <div class="row py-2">
+                                    <div class="col-12 text-center p-3">
+                                        {{-- <h5>Open Access Policy</h5> --}}
+                                        <div class="px-2" style="text-align: justify">
+                                            <div>
+                                                <strong>
+                                                    Definition of Open Access
+                                                </strong>
+                                            </div>
+                                            Open access (OA) refers to the practice of providing unrestricted access to
+                                            scholarly research outputs, including journal articles, books, and other
+                                            academic publications. All materials published under this policy are freely
+                                            available to read, download, and share, without financial, legal, or
+                                            technical barriers.
+                                        </div>
+                                    </div>
+                                </div>
+
+
 
                             </div>
                         </section>
                     </div>
                 </div>
 
+
+
+
+
             </div>
+
+
+
+            <div class="col-xl-5">
+                <div class="card-c">
+
+
+
+
+
+
+
+
+                    <div class="h-box">
+                        <div class="h-box-text p-2">
+                            Mission and Vision
+                        </div>
+                    </div>
+
+                    <div class="row py-2">
+                        <div class="col-12 p-3">
+                            <div class="px-2" style="text-align: justify">
+                                <div>
+                                    <strong>Our Mission</strong>
+                                </div>
+                                Our mission is to publish rigorous, peer-reviewed scholarly work that contributes to the
+                                advancement of science, education, and society. We strive to maintain the highest
+                                standards of integrity and quality in all our publications, ensuring that each piece of
+                                research is a valuable resource for the academic community and beyond.
+                                We envision a world where knowledge is freely accessible to all, empowering researchers,
+                                students, and the general public to engage with and contribute to the global dialogue of
+                                ideas. Our commitment to open access ensures that research can be disseminated widely,
+                                promoting collaboration and discovery.
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row py-2">
+                        <div class="col-12  p-3">
+                            <div class="px-2" style="text-align: justify">
+                                <div>
+                                    <strong> Our Vision</strong>
+                                </div>
+                                We envision a world where knowledge is freely accessible to all, empowering researchers,
+                                students, and the general public to engage with and contribute to the global dialogue of
+                                ideas. Our commitment to open access ensures that research can be disseminated widely,
+                                promoting collaboration and discovery.
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="col-12 pt-3">
+                        <div class="">
+                            <section id="indexing" class="indexing">
+                                <div class="h-box">
+                                    <div class="h-box-text p-2">
+                                        Indexing
+                                    </div>
+                                </div>
+                                <div class="container">
+                                    <div class="indexing-slider swiper">
+                                        <div class="swiper-wrapper align-items-center">
+        
+                                            @foreach ($indexings as $data)
+                                                <div class="swiper-slide">
+                                                    <img class="img-fluid" src="{{ url('assets/indexing/img/' . $data->img) }}"
+                                                        alt="Image"
+                                                        style="height: 140px; width: 140px; object-fit: contain;">
+                                                </div>
+                                            @endforeach
+                                        </div>
+                                    </div>
+        
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+
+
+
+                    <!-- </section> -->
+                </div>
+
+
+
+                
+
+
+
+            </div>
+
+           
+
+
         </div>
 
 
 
         <div class="row  py-4">
+
+            <div class="col-md-4 ">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card-c">
+                            <div class="h-box">
+                                <div class="h-box-text p-2">
+                                    Journals
+                                </div>
+                            </div>
+                            <div>
+                                <div class="p-3">
+
+                                    @foreach ($journals as $data)
+                                        <div class="col-sm-12 text-center p-1">
+                                            <a role="button" href="{{ url('journal-details/' . $data->slug) }}"
+                                                class="btn effect01"> {{ $data->j_name }}</a>
+                                        </div>
+                                    @endforeach
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 pt-3">
+                        <div class="card-c">
+                            <div class="h-box">
+                                <div class="h-box-text p-2">
+                                    Journal Cover
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-center gap-2">
+
+                                @foreach ($journals as $data)
+                                    <div>
+                                        <img src="{{ url('assets/journals/img/' . $data->photo) }}" alt="Image"
+                                            class="col-12 p-1">
+                                    </div>
+                                @endforeach
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="py-3">
+                            <div class="card-c">
+                                <div class="h-box">
+                                    <div class="h-box-text p-2">
+                                        Track Manuscript
+                                    </div>
+                                </div>
+                                <div class="row align-items-stretch">
+                                    <section>
+                                        <div class="access-policy-container p-md-2">
+                                            <form id="searchForm">
+                                                <input type="text" id="query" placeholder="Search..."
+                                                    class="form-control">
+                                                <button type="submit" class="btn  btn-info">Search</button>
+                                            </form>
+
+                                            <div id="result">
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
 
 
             <div class="col-md-8">
@@ -223,10 +386,11 @@
                                                     </a>
                                                 </div>
 
-                                                
+
                                                 <div>
                                                     <a role="button" href="article/{{ $data->slug }}"
-                                                        class="btn btn-sm btn-success px-2 text-capitalize">View Article</a>
+                                                        class="btn btn-sm btn-success px-2 text-capitalize">View
+                                                        Article</a>
                                                 </div>
 
 
@@ -247,128 +411,7 @@
             </div>
 
 
-            <div class="col-md-4 ">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="card-c">
-                            <div class="h-box">
-                                <div class="h-box-text p-2">
-                                    Journals
-                                </div>
-                            </div>
-                            <div>
-                                <div class="p-3">
 
-                                    @foreach($journals as $data)
-
-                                    <div class="col-sm-12 text-center p-1">
-                                        <a role="button" href="{{url('journal-details/'.$data->slug)}}"
-                                            class="btn effect01"> {{$data->j_name}}</a>
-                                    </div>
-                                    @endforeach
-
-
-                                    {{-- <div class="col-sm-12 text-center p-1">
-                                        <a role="button" href="PublicationEthicsandMalpracticeStatement"
-                                            class="btn effect01">Publication Ethics and Malpractice Statement</a>
-                                    </div>
-                                    <div class="col-sm-12 text-center p-1">
-                                        <a role="button" href="ManuscriptPreparationGuidelines"
-                                            class="btn effect01">Manuscript Preparation Guidelines</a>
-                                    </div>
-                                    <div class="col-sm-12 text-center p-1">
-                                        <a role="button" href="ResearchGuidelines" class="btn effect01">Research
-                                            Guidelines</a>
-                                    </div>
-                                    <div class="col-sm-12 text-center p-1">
-                                        <a role="button" href="APAStyle" class="btn effect01">APA Style (6th
-                                            Edition)</a>
-                                    </div> --}}
-                                  
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 pt-3">
-                        <div class="card-c">
-                            <div class="h-box">
-                                <div class="h-box-text p-2">
-                                    Journal Cover
-                                </div>
-                            </div>
-                            <div class="d-flex justify-content-center gap-2">
-
-                                @foreach ($journals as $data)
-                                    <div>
-                                        <img src="{{ url('assets/journals/img/' . $data->photo) }}" alt="Image"
-                                            class="col-12 p-1">
-                                    </div>
-                                @endforeach
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <div>
-                        <div class="py-3">
-                            <div class="card-c">
-                                <div class="h-box">
-                                    <div class="h-box-text p-2">
-                                        Track Manuscript
-                                    </div>
-                                </div>
-                                <div class="row align-items-stretch">
-                                    <section>
-                                        <div class="access-policy-container p-md-2">
-                                            <form id="searchForm">
-                                                <input type="text" id="query" placeholder="Search..."
-                                                    class="form-control">
-                                                <button type="submit" class="btn  btn-info">Search</button>
-                                            </form>
-        
-                                            <div id="result">
-                                            </div>
-                                        </div>
-                                    </section>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    {{-- <div class="col-12 pt-3">
-                        <div class="card-c">
-                            <section id="indexing" class="indexing">
-                                <div class="h-box">
-                                    <div class="h-box-text p-2">
-                                        Indexing
-                                    </div>
-                                </div>
-                                <div class="container" data-aos="fade-left">
-                                    <div class="indexing-slider swiper">
-                                        <div class="swiper-wrapper align-items-center">
-
-                                            @foreach ($indexings as $data)
-                                                <div class="swiper-slide">
-                                                    <img class="img-fluid"
-                                                        src="{{ url('assets/indexing/img/' . $data->img) }}"
-                                                        alt="Image"
-                                                        style="height: 140px; width: 140px; object-fit: contain;">
-                                                </div>
-                                            @endforeach
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </section>
-                        </div>
-                    </div> --}}
-
-                </div>
-
-            </div>
-            <!-- <div class="col-md-4 d-flex align-items-center">
-                
-            </div> -->
 
         </div>
 
