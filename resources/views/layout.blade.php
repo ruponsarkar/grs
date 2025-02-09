@@ -187,7 +187,7 @@
                         {{-- <li><a class="nav-link " href="{{url('conference')}}">Conference Proceedings</a></li> --}}
                         
                         <li><a class="nav-link scrollto {{url()->current() == url('/manuscript') ? 'active' : ''}}" href="{{ url('manuscript') }}"> Submit Manuscript</a></li>
-                        <li><a class="nav-link scrollto {{url()->current() == url('/Payments') ? 'active' : ''}}" href="{{ url('#') }}"> Payments</a></li>
+                        <li><a class="nav-link scrollto {{url()->current() == url('/Payments') ? 'active' : ''}}" href="{{ url('payment') }}"> Payments</a></li>
                         <li><a class="nav-link scrollto {{url()->current() == url('/contactUs') ? 'active' : ''}}" href="{{ url('contactUs') }}">Contact Us</a></li>
 
 

@@ -5,6 +5,7 @@ use App\Http\Controllers\IndexController;
 use App\Http\Controllers\JournalController;
 use App\Http\Controllers\adminPanelController;
 use App\Http\Controllers\FormController;
+use App\Http\Controllers\PayPalController;
 
 /*
 |--------------------------------------------------------------------------
@@ -167,6 +168,15 @@ Route::group(['middleware'=>['AuthCheck']], function(){
 
 Route::get('makeSlug', [adminPanelController::class, 'makeSlug']);
 
+
+
+// paypal 
+Route::get('payment', [PayPalController::class, 'payment'])->name('paypal.payment');
+Route::get('paypal/checkout', [PayPalController::class, 'checkout'])->name('paypal.checkout');
+Route::get('paypal/success', [PayPalController::class, 'success'])->name('paypal.success');
+Route::get('paypal/cancel', [PayPalController::class, 'cancel'])->name('paypal.cancel');
+
+Route::post('/paypal/capture', [PayPalController::class, 'capture'])->name('paypal.capture');
 
 
 
