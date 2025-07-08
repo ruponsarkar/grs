@@ -140,6 +140,20 @@ Route::group(['middleware'=>['AuthCheck']], function(){
     Route::get('delete-journals/{id}', [adminPanelController::class,'deleteJournals']);
     Route::get('delete-article/{id}', [adminPanelController::class, 'deleteArticle']);
 
+    // *****************
+    Route::get('impact/{id}', [adminPanelController::class,'impact']);
+    Route::get('certificate/{id}', [adminPanelController::class,'certificate']);
+
+    Route::post('add-impact', [adminPanelController::class,'addimpact']);
+    Route::post('add-certificate', [adminPanelController::class,'addcertificate']);
+    
+    
+    Route::get('delete_certificate/{id}', [adminPanelController::class,'delete_certificate']);
+    Route::get('delete_impact/{id}', [adminPanelController::class,'delete_impact']);
+
+
+    // *****************
+
     Route::get('book', [adminPanelController::class,'book']);
     Route::post('addBook', [adminPanelController::class,'addBook']);
 

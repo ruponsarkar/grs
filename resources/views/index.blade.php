@@ -360,6 +360,13 @@
                                             {{ Str::limit($data->aname, 30) }}
                                             <br>
                                             <i class="bi bi-tag-fill text-warning"></i> {{ $data->designation }}
+                                            <br>
+                                            <i class="bi bi-file-earmark-fill text-danger"></i> {{ $data->page }}
+                                            @if ($data->doi)
+                                            <br>
+                                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/DOI_logo.svg/260px-DOI_logo.svg.png" width="15" alt=""> 
+                                            <a href="{{$data->doi}}" target="_blank"> {{ $data->doi }} </a>
+                                            @endif
                                         </p>
                                         {{--
                                     <p class='description' style="font-size: 2rem;">

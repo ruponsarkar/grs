@@ -165,6 +165,8 @@
                   <th>Chief Editors</th>
 
                   <th>Edit</th>
+                  <th>Add Impact Factor</th>
+                  <th>Add Certificate</th>
                   <th>Delete</th>
                 </tr>
               </thead>
@@ -185,6 +187,8 @@
                   <!-- <td><a href="update-editors/{{$data->id}}">Edit</a></td> -->
 
                   <td class="text-center"><a href="{{URL('update-journals/'.$data->j_id)}}"><i class="far fa-edit"></i></a></td>
+                  <td class="text-center"><a href="{{URL('impact/'.$data->j_id)}}"><i class="fas fa-arrow-circle-right"></i></a></td>
+                  <td class="text-center"><a href="{{URL('certificate/'.$data->j_id)}}"><i class="fas fa-arrow-circle-right"></i></a></td>
 
                   <td class="text-center"><a class="confirmation" href="{{URL('delete-journals/'.$data->j_id)}}"><i class="fas fa-trash-alt text-danger"></i></a></td>
 

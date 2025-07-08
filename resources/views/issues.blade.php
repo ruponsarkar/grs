@@ -15,25 +15,26 @@
 
                     <div class="specials-title">
                         <p>{{ $Journal_details->j_name }}</p>
+                       
                     </div>
 
                     <div class="row" data-aos="fade-up" data-aos-delay="100">
                         <div class="col-lg-3">
                             <ul class="nav nav-tabs flex-column">
                                 <li class="nav-item p-1">
-                                    <a class="nav-link" href="/journal-details/1">Aims And Scope</a>
+                                    <a class="nav-link" href="/journal-details/{{$Journal_details->slug}}">Aims And Scope</a>
                                 </li>
                                 <li class="nav-item p-1">
-                                    <a class="nav-link" href="/journal-details/1">Editorial board</a>
+                                    <a class="nav-link" href="/journal-details/{{$Journal_details->slug}}">Editorial board</a>
                                 </li>
                                 <li class="nav-item p-1">
-                                    <a class="nav-link active" href="/journal-details/1">Archives</a>
+                                    <a class="nav-link active" href="/journal-details/{{$Journal_details->slug}}">Archives</a>
                                 </li>
                                 <li class="nav-item p-1">
-                                    <a class="nav-link" href="/journal-details/1">Indexing</a>
+                                    <a class="nav-link" href="/journal-details/{{$Journal_details->slug}}">Indexing</a>
                                 </li>
                                 <li class="nav-item p-1">
-                                    <a class="nav-link" href="/journal-details/1">Impact Factor</a>
+                                    <a class="nav-link" href="/journal-details/{{$Journal_details->slug}}">Impact Factor</a>
                                 </li>
                             </ul>
                         </div>
@@ -59,6 +60,13 @@
                                                                 {{ Str::limit($data->aname, 30) }}
                                                                 <br>
                                                                 <i class="bi bi-tag-fill text-warning"></i> {{ $data->designation }}
+                                                                <br>
+                                                                <i class="bi bi-file-earmark-fill text-danger"></i> {{ $data->page }}
+                                                                @if ($data->doi)
+                                                                <br>
+                                                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/DOI_logo.svg/260px-DOI_logo.svg.png" width="15" alt=""> 
+                                                                <a href="{{$data->doi}}" target="_blank"> {{ $data->doi }} </a>
+                                                                @endif
                                                             </p>
                                                             {{--
                                                         <p class='description' style="font-size: 2rem;">

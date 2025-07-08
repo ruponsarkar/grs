@@ -31,6 +31,8 @@ class JournalController extends Controller
  
 
     function Journals_details(Request $request, $slug){
+
+        // return 'jj';
        
         // $err = journal::count('j_id');
 
@@ -78,13 +80,12 @@ class JournalController extends Controller
         ->where('v_id','=',$id)
         ->get();
         
-       
-        
-        
+       $impact = DB::table('impact')->where('j_id', $id)->where('isActive', 1)->get();
+       $certificates = DB::table('certificates')->where('j_id', $id)->where('isActive', 1)->get();
         
         
 
-        return view('journal-details', ['Journal_details'=>$Journal_details, 'Chief_editors'=>$Chief_editors, 'ass_editors'=>$ass_editors, 'indexing'=>$indexing, 'volume'=>$volume, 'issues'=>$issues]);
+        return view('journal-details', ['Journal_details'=>$Journal_details, 'Chief_editors'=>$Chief_editors, 'ass_editors'=>$ass_editors, 'indexing'=>$indexing, 'volume'=>$volume, 'issues'=>$issues, 'impact'=>$impact, 'certificates'=>$certificates]);
 
     }
     
@@ -96,7 +97,7 @@ class JournalController extends Controller
         ->where('id','=', $id)
         ->first();
 
-        $Journal_details = journal::select(['j_name','j_id'])
+        $Journal_details = journal::select(['j_name','j_id', 'slug'])
         ->where('j_id', $j_id->j_id)
         ->first();
 
@@ -121,7 +122,7 @@ class JournalController extends Controller
        
     
 
-        $Journal_details = journal::select(['j_name','j_id','abbr_title','issn','frequency','language','chief_editor', 'publisher','country_of_origin', 'aim_and_scope'])
+        $Journal_details = journal::select(['j_name','j_id','slug', 'abbr_title','issn','frequency','language','chief_editor', 'publisher','country_of_origin', 'aim_and_scope'])
         ->where('j_id', strip_tags($id))
         ->first();
 
@@ -162,7 +163,7 @@ class JournalController extends Controller
         ->where('id','=', $v_id->v_id)
         ->first();
 
-        $Journal_details = journal::select(['j_name','j_id'])
+        $Journal_details = journal::select(['j_name','j_id', 'slug'])
         ->where('j_id', $j_id->j_id)
         ->first();
 

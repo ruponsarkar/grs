@@ -871,6 +871,75 @@ class adminPanelController extends Controller
     }
 
 
+    function impact($id){
+
+        $journal= [];
+
+        $data = DB::table('impact')->where('j_id', $id)->where('isActive', 1)->get();;
+        return view('adminpanel.add-impact', ['id'=> $id, 'datas'=> $data, 'journal'=>$journal]);
+    }
+    function certificate($id){
+
+        $journal= [];
+
+        $data = DB::table('certificates')->where('j_id', $id)->where('isActive', 1)->get();
+        return view('adminpanel.add-certificate', ['id'=> $id, 'datas'=> $data, 'journal'=>$journal]);
+    }
+
+    function addcertificate(Request $request){
+
+        $request->validate([
+            'title' => 'required|max:1000',
+            'file' => 'required',
+        ]);
+
+        $namewithextension = $request->file->getClientOriginalName();
+
+        $fileOriginalName = explode('.', $namewithextension)[0];
+
+        $file = time() . '.' . $request->file->extension();
+
+        $save = DB::table('certificates')->insert([
+            'title' => $request->title,
+            'file' => $file,
+            'j_id'=>$request->id
+        ]);
+
+
+        $request->file->move(base_path('public/assets/certificate'), $file);
+        return redirect()->back()->with('message', 'Your request Submitted successfully');
+
+    }
+    
+    function addimpact(Request $request){
+        $save = DB::table('impact')->insert([
+            'name'=>$request->name,
+            'link' => $request->link,
+            'j_id' =>$request->id
+        ]);
+
+       return redirect()->back()->with('message', 'Your request Submitted successfully');
+    }
+
+
+    function delete_certificate(Request $request, $id){
+        $update=DB::table('certificates')->where('id', $id)->update([
+            'isActive'=> 0
+        ]);
+
+        return redirect()->back()->with('message', 'Your request Submitted successfully');
+    }
+
+    function delete_impact(Request $request, $id){
+        $update=DB::table('impact')->where('id', $id)->update([
+            'isActive'=> 0
+        ]);
+
+        return redirect()->back()->with('message', 'Your request Submitted successfully');
+    }
+
+
+
 
 
 

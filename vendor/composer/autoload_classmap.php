@@ -12,6 +12,7 @@ return array(
     'App\\Http\\Controllers\\FormController' => $baseDir . '/app/Http/Controllers/FormController.php',
     'App\\Http\\Controllers\\IndexController' => $baseDir . '/app/Http/Controllers/IndexController.php',
     'App\\Http\\Controllers\\JournalController' => $baseDir . '/app/Http/Controllers/JournalController.php',
+    'App\\Http\\Controllers\\PayPalController' => $baseDir . '/app/Http/Controllers/PayPalController.php',
     'App\\Http\\Controllers\\adminPanelController' => $baseDir . '/app/Http/Controllers/adminPanelController.php',
     'App\\Http\\Kernel' => $baseDir . '/app/Http/Kernel.php',
     'App\\Http\\Middleware\\Authenticate' => $baseDir . '/app/Http/Middleware/Authenticate.php',
